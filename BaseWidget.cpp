@@ -21,6 +21,7 @@ BaseWidget::~BaseWidget()
 
 void BaseWidget::mousePressEvent(QMouseEvent *event)
 {
+    // 在最大化状态下无法移动
     if ((!isMaximized()) && (event->button() == Qt::LeftButton))
     {
         m_isMoving = true;
