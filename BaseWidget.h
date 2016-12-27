@@ -15,9 +15,10 @@ protected:
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
+    void paintEvent(QPaintEvent *event);
 
 private:
-    bool m_pressed;
+    bool m_isMoving;
     QPoint m_delta;
 };
 
